@@ -1,0 +1,70 @@
+    <html>
+    <head>
+    <title>Formulário de Cadastro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="_css/estilo.css">
+	<script src="_javascript/valida__form.js"></script>
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css " rel = "stylesheet">
+	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  
+    </head>
+
+    <body>
+    <!-- Inicio do formulario -->
+	
+	<form name="form" id="form">
+  <table>
+  
+  <tr><th colspan=2>Formulário de Cadastro</th></tr>
+  
+  <tr><td><label for="nome">Nome:</label></td>
+  
+    <td><input type="text" name="nome" id="nome" autocomplete="off"></td></tr>
+	
+
+    <tr><td><label for="cpf">CPF:</label></td>
+	
+    <td><input type="text" name="cpf" id="cpf" autocomplete="off"></td></tr>
+	
+
+    <tr><td><label for="tel">Celular:</label></td>
+    <td><input type="text" name="cel" id="cel" autocomplete="off"></td></tr>
+
+    <tr><td><label>Cep:</label></td>
+    <td><input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+       onblur="pesquisacep(this.value);" />
+	</td></tr>
+
+	<tr><td><label>Rua:</label></td>
+    <td><input name="rua" type="text" id="rua" size="60" /></td></tr>
+	
+	<tr><td><label>Numero:</label></td>
+    <td><input name="numero" type="text" id="num" size="4" /></td></tr>
+	
+	<tr><td><label>Complemento:</label></td>
+    <td><input name="complemento" type="text" id="compl" size="60" /></td></tr>
+	
+	<tr><td><label>Bairro:</label></td>
+    <td><input name="bairro" type="text" id="bairro" size="40" /></td></tr>
+	
+	<tr><td><label>Cidade:</label></td>
+    <td><input name="cidade" type="text" id="cidade" size="40" /></td></tr>
+	
+	<tr><td><label>Estado:</label></td>
+    <td><input name="uf" type="text" id="uf" size="2" /></td></tr>
+
+  <tr><th><button type="button" onclick="validar()">Validar Formulário</button></th>
+
+
+  </table>
+  
+  
+
+</form>
+<!-- Todos os script de framework devem estar no final do body -->
+<script src = "_javascript/jquery.js"></script>
+</body>
+</html>
+	
